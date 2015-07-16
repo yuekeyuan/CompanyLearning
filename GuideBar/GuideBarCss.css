@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0 0;
+	padding:0 0;
+}
+#guideBar1{
+	width:200px; 
+}
+#guideBar1 ul{
+	border:1px solid #999;
+}
+#guideBar1 ul li{
+	list-style-type:none;
+	background:#999 url(img/downArrow.png) no-repeat 0 50%;
+	padding-left:30px;
+	height:2.5em;
+	line-height:2.5em;
+	border:1px solid #223;
+	border-top:1px solid #CCC;
+	cursor:pointer;
+	font-weight:bold;
+}
+#guideBar1 ul li:hover{
+	background:#666 url(img/rightArrow.png) no-repeat 0 50%;
+}
+/****************guide bar 2**********************/
+
+#guideBar2{
+	clear:both;
+}
+#guideBar2 ol{
+	margin:0 auto;
+	text-align:center;
+}
+#guideBar2 ol:before{
+	content:"\00AB";
+}
+#guideBar2 ol:after{
+	content:"\00BB";
+}
+#guideBar2 ol li{
+	display: inline-block;
+	margin:20px 0px;
+	border:1px solid #111;
+	min-width:2em;
+	min-height:2em;
+	line-height:2em;
+	font-weight:bold;
+	font-size:large;
+}
+#guideBar2 ol li:hover{
+	background:#666;
+	cursor:pointer;
+}
+#guideBar2 ol li:first-child,
+#guideBar2 ol li:last-child{
+	border:none;
+}
+
+/****************guideBar3************************/
+#guideBar3{
+	width:60em;
+	overflow:hidden;
+	margin:0 auto;
+}
+#guideBar3 ul{
+	background:#f00;
+	text-align:center;
+}
+#guideBar3 ul li{
+	display:inline-table;
+	float:left;
+	min-width:4em;
+	font-size:large;
+	line-height:1.9em;
+	padding:0 0.5em;
+	font-weight:bold;
+	background:#f00 url(img/nav.jpg) repeat-x;
+	border-right:1px solid #003;
+	border-left:1px solid #999;
+}
+#guideBar3 ul li:last-child{
+	border-right:none;
+}
+#guideBar3 ul li:first-child{
+	border-left:none;
+}
+
+#guideBar3 ul li:hover{
+	background:#ff0;
+}
+
+/****************surckerfish ************************/
+#guideBar4{
+	margin:0 auto;
+	width:60%;
+	text-align:center;
+}
+#guideBar4 > ul{
+	width:100%;	
+}
+#guideBar4 > ul > li{
+	min-width:6em;
+	height:2em;
+	line-height:2em;
+	float:left;
+	background:#666;
+	list-style-type:none;
+	border-left:#333 1px solid;
+	border-right:#CCC 1px solid;
+	cursor:pointer;
+}
+#guideBar4 > ul > li:first-child{
+	border-left:none;
+}
+#guideBar4 > ul > li:last-child{
+	border-right:none;
+}
+#guideBar4 > ul > li:hover{
+	background:#069;
+}
+#guideBar4 > ul > li >ul{
+	position:absolute;
+	left:-999em;
+}
+#guideBar4 > ul > li:hover ul{
+	left:auto;
+}
+#guideBar4 > ul > li > ul > li{
+	background:none;
+	list-style-type:none;
+	height:2em;
+	line-height:2em;
+	background:#666;
+	cursor:pointer;
+	border-bottom:#333 1px solid;
+	border-top:#CCC 1px solid;
+}
+#guideBar4 > ul > li > ul > li:last-child{
+	border-bottom:none;
+}
+#guideBar4 > ul > li > ul > li:hover{
+	background:#063;
+}
+ 
